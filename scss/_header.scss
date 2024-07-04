@@ -1,0 +1,12 @@
+
+.btn-transparent {
+    background-color: transparent; /* Tornar o botão transparente */
+    color: white; /* Texto em branco */
+    border-color: white; /* Borda branca */
+}
+
+.btn-transparent:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo ligeiramente branco ao passar o mouse */
+    color: white; /* Texto continua branco */
+}
+

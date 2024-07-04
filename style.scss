@@ -1,0 +1,83 @@
+/*
+Theme Name: Tema do Ranho Nhazinha
+Author: Felipe Buhrer Salles Rosa
+Version: 0.0
+
+*/
+@use 'scss/header';
+@use 'scss/home_cards-loja';
+@use 'scss/home_quem-somos';
+
+$creme-color: #fffaf3;
+
+* {
+   font-family: 'sans-serif';
+}
+
+
+
+.background-rose {
+   background-image: url('http://localhost/wp-MathElemento/wp-content/uploads/2024/06/fundo_rosa3.png');
+   /* Cor rosa com 30% de opacidade */
+   padding: 20px;
+   /* Espaçamento interno */
+   //background-size: cover;
+   background-repeat: no-repeat;
+   background-position: right 118% top -182%;
+   //background-position: 25% 75%; /* Centraliza horizontalmente e posiciona no topo */
+}
+
+.background-creme {
+   position: absolute;
+   margin: auto;
+   inset: 0px;
+   width: 500px;
+   height: 700px;
+   background: $creme-color;
+   z-index: -1;
+}
+
+
+.no-outline{
+   --bs-card-border-width: 0;
+   --bs-card-border-color: transparent;
+}
+
+.text-grow{
+
+   transition: all .5s  ease-in-out;
+}
+.text-grow:hover {
+   color: #8E1E36 !important;
+   transform: scale(1.1);
+}
+
+.custom-div {
+   background: url('https://www.ranchonhazinha.com.br/assets/rancho_nhazinha_white.svg') no-repeat;
+   background-size: center; /* Or 'cover' depending on your needs */
+   height: 75px; /* Adjust height as needed */
+}
+
+.footer_background{
+   background: #8E1E36 url('https://www.ranchonhazinha.com.br/assets/footer-cavalo.svg');
+}
+
+.email-input {
+   border: none;
+   border-bottom: 1px solid white;
+   background: transparent;
+   color: white;
+   outline: none;
+   width: 100%;
+   padding: 5px 0;
+}
+
+.email-input::placeholder {
+   color: white;
+   opacity: 0.7;
+}
+
+.email-input:focus {
+   border-bottom: 1px solid white;
+   outline: none;
+}
